@@ -42,6 +42,9 @@ class Student
       FROM students
       WHERE grade = 9
     SQL
+
+    DB[:conn].executute(sql).map do |student|
+      self.new_from_db(student)
   end
 
   def save
