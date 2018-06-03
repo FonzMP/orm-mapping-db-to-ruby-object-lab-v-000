@@ -37,6 +37,10 @@ class Student
   end
 
   def self.count_all_students_in_grade_9
+    sql = <<-SQL
+
+    SQL
+  end
 
   def save
     sql = <<-SQL
