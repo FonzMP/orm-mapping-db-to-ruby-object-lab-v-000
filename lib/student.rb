@@ -31,6 +31,8 @@ class Student
         WHERE name = ?
         LIMIT 1
       SQL
+
+      DB[:conn]
   end
 
   def save
